@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import java.lang.*?>
+        <?import javafx.collections.*?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+        <?import javafx.scene.shape.*?>
+        <?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MeetingRoomApp.UIController">
+<children>
+   <AnchorPane prefHeight="480.0" prefWidth="640.0">
+      <children>
+         <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="59.0" prefWidth="221.0">
+            <children>
+               <Pane layoutX="6.0" layoutY="7.0" prefHeight="49.0" prefWidth="595.0">
+                  <children>
+                     <Label fx:id="title" layoutX="48.0" layoutY="11.0" text="Meeting Room Booking">
+                        <font>
+                           <Font size="24.0" />
+                        </font></Label>
+                  </children>
+               </Pane>
+            </children>
+         </AnchorPane>
+         <Pane fx:id="RoomDatePane" layoutX="20.0" layoutY="87.0" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 8;">
+            <children>
+               <Label fx:id="LabelMeetingRoom" layoutX="23.0" layoutY="16.0" text="Meeting Room" />
+               <DatePicker fx:id="datePicker" layoutX="357.0" layoutY="11.0" />
+               <ComboBox fx:id="MeetingRoomComboBox" layoutX="128.0" layoutY="11.0" prefWidth="150.0" promptText="Select">
+                  <items>
+                     <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Item 1" />
+                        <String fx:value="Item 2" />
+                        <String fx:value="Item 3" />
+                     </FXCollections>
+                  </items>
+               </ComboBox>
+            </children>
+         </Pane>
+         <Pane fx:id="AvailibilityPane" layoutX="20.0" layoutY="146.0" prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 8;">
+            <children>
+               <Circle fx:id="circle800" fill="#67e630" layoutX="71.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle815" fill="#67e630" layoutX="82.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle830" fill="#67e630" layoutX="93.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle845" fill="#67e630" layoutX="104.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle900" fill="#67e630" layoutX="119.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle915" fill="#67e630" layoutX="130.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle930" fill="#67e630" layoutX="141.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle945" fill="#67e630" layoutX="152.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1000" fill="#67e630" layoutX="166.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1015" fill="#67e630" layoutX="177.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1030" fill="#67e630" layoutX="188.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1045" fill="#67e630" layoutX="199.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1100" fill="#67e630" layoutX="214.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1115" fill="#67e630" layoutX="225.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1130" fill="#67e630" layoutX="236.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1145" fill="#67e630" layoutX="247.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1200" fill="#67e630" layoutX="261.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1215" fill="#67e630" layoutX="272.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1230" fill="#67e630" layoutX="283.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1245" fill="#67e630" layoutX="294.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1300" fill="#67e630" layoutX="309.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1315" fill="#67e630" layoutX="320.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1330" fill="#67e630" layoutX="331.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1345" fill="#67e630" layoutX="342.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1400" fill="#67e630" layoutX="356.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1415" fill="#67e630" layoutX="367.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1430" fill="#67e630" layoutX="378.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1445" fill="#67e630" layoutX="389.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1500" fill="#67e630" layoutX="404.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1515" fill="#67e630" layoutX="415.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1530" fill="#67e630" layoutX="426.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1545" fill="#67e630" layoutX="437.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1600" fill="#67e630" layoutX="451.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1615" fill="#67e630" layoutX="462.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1630" fill="#67e630" layoutX="473.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1645" fill="#67e630" layoutX="484.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1700" fill="#67e630" layoutX="498.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1715" fill="#67e630" layoutX="509.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1730" fill="#67e630" layoutX="520.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Circle fx:id="circle1745" fill="#67e630" layoutX="531.0" layoutY="48.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+               <Label layoutX="63.0" layoutY="31.0" text="8AM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="111.0" layoutY="31.0" text="9AM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="156.0" layoutY="31.0" text="10AM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="205.0" layoutY="31.0" text="11AM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="251.0" layoutY="31.0" text="12PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="302.0" layoutY="31.0" text="1PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="349.0" layoutY="31.0" text="2PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="396.0" layoutY="31.0" text="3PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="443.0" layoutY="31.0" text="4PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+               <Label layoutX="490.0" layoutY="31.0" text="5PM">
+                  <font>
+                     <Font size="8.0" />
+                  </font>
+               </Label>
+            </children></Pane>
+         <Pane fx:id="TimePane" layoutX="20.0" layoutY="240.0" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 8;">
+            <children>
+               <Label fx:id="LabelFrom" layoutX="66.0" layoutY="19.0" text="From" />
+               <Label fx:id="LabelTo" layoutX="349.0" layoutY="19.0" text="To" />
+               <ComboBox fx:id="ComboBoxTimeFrom" layoutX="105.0" layoutY="14.0" prefWidth="150.0" />
+               <ComboBox fx:id="ComboBoxTimeTo" layoutX="374.0" layoutY="14.0" prefWidth="150.0" />
+            </children></Pane>
+         <Pane fx:id="ButtonPane" layoutX="19.0" layoutY="319.0" prefHeight="49.0" prefWidth="601.0">
+            <children>
+               <Button fx:id="bookButton" layoutX="515.0" layoutY="11.0" mnemonicParsing="false" text="Book now">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Button>
+               <Button fx:id="CancelButton" cancelButton="true" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" text="Cancel" />
+            </children>
+         </Pane>
+      </children></AnchorPane>
+</children>
+<columnConstraints>
+   <ColumnConstraints />
+</columnConstraints>
+<rowConstraints>
+   <RowConstraints />
+</rowConstraints>
+</GridPane>
